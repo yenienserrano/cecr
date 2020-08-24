@@ -1,0 +1,251 @@
+.carousel .carousel-indicators li {
+    width: .625rem;
+    height: .625rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.altura{
+    max-height: 411px;
+    min-height: 237px;
+    object-fit: cover;
+}
+
+.cover{
+    object-fit: cover;
+}
+
+.contacto{
+    background: linear-gradient(180deg, rgba(242,153,74,1) 20%, rgba(244,243,243,1) 20%);
+    .boton{
+        width: 350px;
+        height: 64px;
+        background: #01589B;
+        outline: none;
+        border-radius: 8px;
+        border: none;
+        
+        .textoBoton{                
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+
+.margenes-1{
+    margin: 0 auto 0 auto;
+}
+
+.cartas{
+    // padding: 89px 2rem 213px 11rem;
+    min-height: 504px;
+    background: url('./assets/img/bg/bg_links.png');
+    background-repeat: no-repeat;
+
+    .ancho{
+        width:100%;
+    }
+
+    .beneficios{
+        
+        width: 235px;
+        .titulo{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #01589B;
+        }
+        .parrafoCartas{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #01589B;
+        }
+    }
+    .beneficios:nth-last-child(1){
+        margin-right: 0px;
+    }   
+}
+
+.noticias{
+    width: 75%;
+    .noticia{
+        width: 330px;
+        height: 483px;
+        background: #FFFFFF;
+        box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        margin: 15px 0 15px 0;
+
+        .imagen{
+            height: 187px !important;
+        }
+
+        .info{
+            padding:20px;
+            height: 235px;
+            .fecha{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: right;
+                color: #333333;
+            }
+            .datos{
+                .titulo{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #01589B;
+                }
+                .descripcion{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #333333;
+                    height: 84px;
+                }
+            }
+            
+        }
+        .boton{
+            padding-right:20px;
+            background: none;
+            border: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            color: #2D9CDB;
+            outline: none;
+            height: 100%;
+        }
+    }    
+}
+.verMas{
+    margin-top: 78px;
+    .verNov{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #2D9CDB;
+        border-radius: 6px;
+        padding: 13px 47px;
+        outline: none;
+        border: none;
+    }
+}
+
+.final{
+    background:  #F2F2F2;
+    height: 141px;
+}
+
+.footer{
+    .afiliacion{
+        max-height: 366px;
+        background-image: url("./assets/img/bg/bg_form.png");
+        background-repeat: no-repeat;
+        .texto{
+            // padding-left: 10rem;
+            .titulo{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 76px;
+                color: #000000
+            }
+            .parrafo{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+        }
+        .formulario{
+            // width: 450px;
+            height: 357px;
+            background: #E0E0E0;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            padding:27px 38px 26px 45px;
+            // margin-right: 335px;
+
+            .tituloForm{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #01589B;
+            }
+            .parrafoForm{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #01589B;
+                margin-bottom: 21px;
+            }
+            .boton{
+                height: 50px;
+                width: 120px;
+                background: #2D9CDB;
+                border-radius: 6px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #FFFFFF;
+                border: none;
+            }
+        }
+    }
+}
+
+@media (max-width:991px){
+    .contacto{
+        background: linear-gradient(180deg, #f2994a 6%, #FFFFFF 7%);
+    }
+    .cartas{
+        background: #FFFFFF;
+    }
+    .noticias{
+        width: 100%;
+        background: #F4F3F3;
+
+        .noticia{
+            margin-left: 3px;
+            margin-right: 3px;
+            width: 100%;
+        }
+    }
+
+    
+}

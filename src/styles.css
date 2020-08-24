@@ -1,0 +1,884 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap");
+.bgBeneficios {
+  background-image: url("./assets/img/bg/bg_links.png");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.bgBeneficios .titulo {
+  padding-top: 64px;
+  margin: 0 auto;
+  width: 75%;
+}
+.bgBeneficios .titulo .tituloPagina {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 55px;
+  color: #01589B;
+}
+.bgBeneficios .contenedor {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 124px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios {
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 430px;
+  min-height: 500px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .sociosbg {
+  background-image: url("./assets/img/img/Beneficios/sede.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-position: -4px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .salonbg {
+  background-image: url("./assets/img/img/Beneficios/salones.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-position: -3px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .campingbg {
+  background-image: url("./assets/img/img/Beneficios/camping.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .osecacbg {
+  background-image: url("./assets/img/img/Beneficios/atencion_especial.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .pasobg {
+  background-image: url("./assets/img/img/Beneficios/alojamientos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .casamientobg {
+  background-image: url("./assets/img/img/Beneficios/casamiento.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .recienbg {
+  background-image: url("./assets/img/img/Beneficios/RNAciedo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .bolsobg {
+  background-image: url("./assets/img/img/Beneficios/mercaderia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .hijosbg {
+  background-image: url("./assets/img/img/Beneficios/hijos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .farmaciabg {
+  background-image: url("./assets/img/img/Beneficios/farmacia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .opticabg {
+  background-image: url("./assets/img/img/Beneficios/optica.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .sepeliobg {
+  background-image: url("./assets/img/img/Beneficios/sepelio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .head {
+  height: 146px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .head .contenedorTitulo {
+  margin-top: 19px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  height: 36px;
+  background: #2D9CDB;
+  padding: 5px 32px 5px 17px;
+}
+.bgBeneficios .contenedor .cartaBeneficios .head .contenedorTitulo .tituloCard {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.bgBeneficios .contenedor .cartaBeneficios .parrafosBeneficios {
+  border-top: 10px solid #F2994A;
+  padding: 28px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #01589B;
+}
+
+@media (max-width: 767px) {
+  .bgBeneficios {
+    background-image: none;
+    background: #FFFFFF;
+  }
+  .bgBeneficios .titulo {
+    padding-top: 32px;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .bgBeneficios .titulo .tituloPagina {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .bgBeneficios .contenedor {
+    padding: 0 10px 0 10px;
+    width: 100%;
+    margin-bottom: 51px;
+    margin-top: 10px;
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .sociosbg {
+    background-image: url("./assets/img/movil/beneficios/sede.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .salonbg {
+    background-image: url("./assets/img/movil/beneficios/salones.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .campingbg {
+    background-image: url("./assets/img/movil/beneficios/camping.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .osecacbg {
+    background-image: url("./assets/img/movil/beneficios/atención_especial.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .pasobg {
+    background-image: url("./assets/img/movil/beneficios/alojamientos.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .casamientobg {
+    background-image: url("./assets/img/movil/beneficios/casamiento.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .recienbg {
+    background-image: url("./assets/img/movil/beneficios/RNAciedo.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .bolsobg {
+    background-image: url("./assets/img/movil/beneficios/mercaderia.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .hijosbg {
+    background-image: url("./assets/img/movil/beneficios/hijos.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .farmaciabg {
+    background-image: url("./assets/img/movil/beneficios/farmacia.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .opticabg {
+    background-image: url("./assets/img/movil/beneficios/optica.png");
+  }
+  .bgBeneficios .contenedor .cartaBeneficios .sepeliobg {
+    background-image: url("./assets/img/movil/beneficios/sepelio.png");
+  }
+}
+.carousel .carousel-indicators li {
+  width: 0.625rem;
+  height: 0.625rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.altura {
+  max-height: 411px;
+  min-height: 237px;
+  object-fit: cover;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contacto {
+  background: linear-gradient(180deg, #f2994a 20%, #f4f3f3 20%);
+}
+.contacto .boton {
+  width: 350px;
+  height: 64px;
+  background: #01589B;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}
+.contacto .boton .textoBoton {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.margenes-1 {
+  margin: 0 auto 0 auto;
+}
+
+.cartas {
+  min-height: 504px;
+  background: url("./assets/img/bg/bg_links.png");
+  background-repeat: no-repeat;
+}
+.cartas .ancho {
+  width: 100%;
+}
+.cartas .beneficios {
+  width: 235px;
+}
+.cartas .beneficios .titulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.cartas .beneficios .parrafoCartas {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01589B;
+}
+.cartas .beneficios:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.noticias {
+  width: 75%;
+}
+.noticias .noticia {
+  width: 330px;
+  height: 483px;
+  background: #FFFFFF;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  margin: 15px 0 15px 0;
+}
+.noticias .noticia .imagen {
+  height: 187px !important;
+}
+.noticias .noticia .info {
+  padding: 20px;
+  height: 235px;
+}
+.noticias .noticia .info .fecha {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #333333;
+}
+.noticias .noticia .info .datos .titulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.noticias .noticia .info .datos .descripcion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  height: 84px;
+}
+.noticias .noticia .boton {
+  padding-right: 20px;
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #2D9CDB;
+  outline: none;
+  height: 100%;
+}
+
+.verMas {
+  margin-top: 78px;
+}
+.verMas .verNov {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #2D9CDB;
+  border-radius: 6px;
+  padding: 13px 47px;
+  outline: none;
+  border: none;
+}
+
+.final {
+  background: #F2F2F2;
+  height: 141px;
+}
+
+.footer .afiliacion {
+  max-height: 366px;
+  background-image: url("./assets/img/bg/bg_form.png");
+  background-repeat: no-repeat;
+}
+.footer .afiliacion .texto .titulo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  color: #000000;
+}
+.footer .afiliacion .texto .parrafo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footer .afiliacion .formulario {
+  height: 357px;
+  background: #E0E0E0;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 27px 38px 26px 45px;
+}
+.footer .afiliacion .formulario .tituloForm {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.footer .afiliacion .formulario .parrafoForm {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01589B;
+  margin-bottom: 21px;
+}
+.footer .afiliacion .formulario .boton {
+  height: 50px;
+  width: 120px;
+  background: #2D9CDB;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .contacto {
+    background: linear-gradient(180deg, #f2994a 6%, #FFFFFF 7%);
+  }
+
+  .cartas {
+    background: #FFFFFF;
+  }
+
+  .noticias {
+    width: 100%;
+    background: #F4F3F3;
+  }
+  .noticias .noticia {
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 100%;
+  }
+}
+.ultimasNoticias1 {
+  padding: 41px 100px 76px 0px;
+  background: #F4F3F3;
+}
+.ultimasNoticias1 .titulo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 55px;
+  color: #01589B;
+  margin-left: 15px;
+  margin-bottom: 45px;
+}
+.ultimasNoticias1 .noticia {
+  width: 350px;
+  height: 483px;
+  background: #FFFFFF;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  margin: 15px 15px 15px 15px;
+}
+.ultimasNoticias1 .noticia .imagen {
+  height: 187px !important;
+}
+.ultimasNoticias1 .noticia .info {
+  padding: 20px;
+  height: 235px;
+}
+.ultimasNoticias1 .noticia .info .fecha {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #333333;
+}
+.ultimasNoticias1 .noticia .info .datos .titulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.ultimasNoticias1 .noticia .info .datos .descripcion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  max-height: 126px;
+  overflow: hidden;
+}
+.ultimasNoticias1 .noticia .boton {
+  padding-right: 20px;
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #2D9CDB;
+  outline: none;
+  height: 100%;
+}
+
+.bgblanco {
+  background: #FFF;
+}
+
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.block-with-text:before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.block-with-text:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+.tituloUltimasNoticias {
+  margin-left: 20%;
+}
+
+.bgNoticia {
+  background: #ffffff;
+}
+.bgNoticia .todoNoticias {
+  padding: 60px 0px 60px 0px;
+  max-width: 929px;
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+.bgNoticia .todoNoticias .seleccionNoticias .boton {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+  background: none;
+  border: none;
+}
+.bgNoticia .todoNoticias .noticiaTotal .imagen {
+  width: 100%;
+  max-height: 546px;
+}
+.bgNoticia .todoNoticias .noticiaTotal .info .fecha {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+.bgNoticia .todoNoticias .noticiaTotal .info .titulo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 58px;
+  color: #01589B;
+}
+.bgNoticia .todoNoticias .noticiaTotal .info .descripcion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.bgNoticia .todoNoticias .botonvolver {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .bgNoticia {
+    background: #ffffff;
+  }
+  .bgNoticia .todoNoticias {
+    width: 100%;
+  }
+  .bgNoticia .todoNoticias .noticiaTotal .info {
+    padding: 20px;
+  }
+
+  .tituloUltimasNoticias {
+    margin-left: 0;
+  }
+}
+.bordetop {
+  height: 11px;
+  background: linear-gradient(180deg, #143F67 0%, rgba(15, 65, 112, 0) 100%), #2D9CDB;
+}
+
+.margen-general {
+  width: 100%;
+}
+
+.tamañoymargen {
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.margenes-1 {
+  margin: 0 auto 0 auto;
+}
+
+.fondoHeader {
+  max-height: 156px;
+  background: white;
+}
+.fondoHeader .logo {
+  outline: none;
+  cursor: pointer;
+  width: 146.06px;
+  max-height: 111px;
+  margin: 30px 0 10px;
+}
+.fondoHeader .titulos {
+  outline: none;
+  cursor: pointer;
+  outline: none;
+}
+.fondoHeader .titulos .titulo {
+  margin-top: 39px;
+  margin-left: 30px;
+  color: #01589B;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 45px;
+}
+.fondoHeader .titulos .lugar {
+  margin-left: 30px;
+  margin-top: 8px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 40px;
+  color: #2D9CDB;
+}
+.fondoHeader .links {
+  padding-top: 107px;
+  padding-right: 61px;
+}
+.fondoHeader .links .link {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  height: 19px;
+  text-decoration: none;
+}
+.fondoHeader .links .link:hover {
+  color: #2D9CDB;
+  cursor: pointer;
+}
+
+.pie {
+  padding-bottom: 70px;
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+.pie .redes {
+  margin-top: 78px;
+}
+.pie .redes .face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.pie .redes .mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.pie .redes .boton {
+  width: 100%;
+  height: 64px;
+  background: #01589B;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}
+.pie .redes .boton .textoBoton {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.pie .direcciones {
+  margin-top: 78px;
+}
+.pie .direcciones .direccion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #01589B;
+}
+.pie .direcciones .barradiv {
+  width: 4px;
+  border-top: solid 2px #01589B;
+}
+.pie .telefonos {
+  margin-top: 78px;
+}
+.pie .telefonos .direccion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #01589B;
+}
+.pie .telefonos .telefono {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+
+.botonesRes {
+  background: #2D9CDB;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.footer .afiliacion {
+  max-height: 366px;
+  background-image: url("./assets/img/bg/bg_form.png");
+  background-repeat: no-repeat;
+}
+.footer .afiliacion .texto .titulo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  color: #000000;
+}
+.footer .afiliacion .texto .parrafo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footer .afiliacion .formulario {
+  height: 357px;
+  background: #E0E0E0;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 27px 38px 26px 45px;
+}
+.footer .afiliacion .formulario .tituloForm {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+.footer .afiliacion .formulario .parrafoForm {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01589B;
+  margin-bottom: 21px;
+}
+.footer .afiliacion .formulario .boton {
+  height: 50px;
+  width: 120px;
+  background: #2D9CDB;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+
+.contactoRuta {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #01589B;
+}
+
+@media (max-width: 767px) {
+  .fondoHeader {
+    background: #F4F3F3;
+  }
+  .fondoHeader .logo {
+    margin: 10px 0 10px;
+  }
+
+  .pie {
+    width: 100%;
+  }
+
+  .tamañoymargen {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+
+  .footer .afiliacion {
+    padding: 0 10px;
+    max-height: 600px;
+    height: 600px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-image: url("./assets/img/movil/bg_Form_Rsp.png");
+  }
+  .footer .afiliacion .formulario {
+    bottom: -10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

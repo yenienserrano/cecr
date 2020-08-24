@@ -1,0 +1,93 @@
+.tituloUltimasNoticias{
+    margin-left: 20%;
+}
+
+.bgNoticia{
+    background: #ffffff;
+
+    .todoNoticias{
+        padding: 60px 0px 60px 0px;
+        max-width: 929px;
+        width: 100%;
+        margin: 0 0 0 auto;
+        
+        .seleccionNoticias{
+            
+            .boton{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+                color: #01589B;
+                background: none;
+                border: none;
+            }        
+        }
+    
+        .noticiaTotal{
+            .imagen{
+                width: 100%;
+                max-height: 546px ;                           
+            }
+    
+            .info{
+    
+                .fecha{
+                    font-family: Rubik;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #333333;
+                }
+                .titulo{
+                    font-family: Rubik;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 38px;
+                    line-height: 58px;
+                    color: #01589B;
+                }
+                .descripcion{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #333333;
+                }
+            }        
+        }
+        .botonvolver{
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: #01589B;
+            border: none;
+            background: none;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .bgNoticia{
+        background: #ffffff;
+
+        .todoNoticias{
+            width:100%;
+
+            .noticiaTotal{                
+        
+                .info{
+                    padding:20px
+                }
+            }
+        }
+    }
+    .tituloUltimasNoticias{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
+@import "paginas/beneficios.scss"; 
+@import "paginas/home.scss"; 
+@import "paginas/noticias.scss"; 
+@import "paginas/noticia.scss"; 
+
+.bordetop{
+    height: 11px;
+    background: linear-gradient(180deg, #143F67 0%, rgba(15, 65, 112, 0) 100%), #2D9CDB;;
+}
+
+.margen-general{
+    width: 100%;
+}
+
+.tamañoymargen{
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+
+.margenes-1{
+    margin: 0 auto 0 auto;
+}
+
+.fondoHeader{
+    // width: 100%;
+    max-height: 156px;
+    background: white;
+    .logo{
+        outline: none;
+        cursor: pointer;
+        width: 146.06px;
+        max-height: 111px;
+        margin:30px 0 10px;
+    }    
+    .titulos{
+        outline: none;
+        // width: 700px;
+        cursor: pointer;
+        outline: none;
+
+        .titulo{
+            margin-top:39px;
+            margin-left: 30px;
+            color:#01589B;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 45px;
+        }
+        .lugar{
+            margin-left: 30px;
+            margin-top: 8px;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 34px;
+            line-height: 40px;
+            color: #2D9CDB;
+        }
+    }
+    .links{
+        padding-top:107px; 
+        padding-right: 61px;   
+        .link{
+            color: #333333;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            height: 19px;
+            text-decoration: none;
+        }
+        .link:hover{
+            color: #2D9CDB; 
+            cursor: pointer;           
+        }        
+    }
+}
+
+
+
+.pie{
+    padding-bottom: 70px;
+    width:75%;
+    margin: 0 auto 0 auto;
+    .redes{
+        margin-top: 78px;
+
+        .face{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: #01589B;
+        }
+
+        .mail{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #01589B;
+        }
+        .boton{
+            width: 100%;
+            height: 64px;
+            background: #01589B;
+            outline: none;
+            border-radius: 8px;
+            border: none;
+                
+            .textoBoton{                
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFFFFF;
+            }
+        }
+    } 
+    
+    .direcciones{
+        margin-top: 78px;
+        .direccion{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #01589B;
+        }
+        .barradiv{
+            width: 4px;
+            border-top: solid 2px #01589B;
+        }
+    }
+
+    .telefonos{
+        margin-top: 78px;
+        // margin-right: 180px;
+
+        .direccion{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #01589B;
+        }
+
+        .telefono{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #01589B;
+        }
+    }
+}
+
+.botonesRes{
+    background: #2D9CDB;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer{
+    .afiliacion{
+        max-height: 366px;
+        background-image: url("./assets/img/bg/bg_form.png");
+        background-repeat: no-repeat;
+        .texto{
+            // padding-left: 10rem;
+            .titulo{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 76px;
+                color: #000000
+            }
+            .parrafo{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+        }
+        .formulario{
+            // width: 450px;
+            height: 357px;
+            background: #E0E0E0;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            padding:27px 38px 26px 45px;
+            // margin-right: 335px;
+
+            .tituloForm{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #01589B;
+            }
+            .parrafoForm{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #01589B;
+                margin-bottom: 21px;
+            }
+            .boton{
+                height: 50px;
+                width: 120px;
+                background: #2D9CDB;
+                border-radius: 6px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #FFFFFF;
+                border: none;
+            }
+        }
+    }
+}
+
+.contactoRuta{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #01589B;
+}
+
+
+@media (max-width: 767px){
+    .fondoHeader{
+        background: #F4F3F3;
+        .logo{
+            margin:10px 0 10px;
+        }
+    }
+    .pie{
+        width:100%;
+    }
+    .tamañoymargen{
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+
+    .footer{
+        
+        .afiliacion{
+            padding:0 10px;
+            max-height: 600px;
+            height: 600px;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-image: url("./assets/img/movil/bg_Form_Rsp.png");
+
+            .formulario{
+                bottom: -10px;
+            }
+        }
+    }
+}

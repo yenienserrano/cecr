@@ -1,0 +1,106 @@
+.ultimasNoticias1{
+    
+    padding:41px 100px 76px 0px;
+    background: #F4F3F3;
+    
+
+    .titulo{
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 46px;
+        line-height: 55px;
+        color: #01589B;
+        margin-left: 15px;
+        margin-bottom: 45px;
+    }
+
+    .noticia{
+        width: 350px;
+        height: 483px;
+        background: #FFFFFF;
+        box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        margin: 15px 15px 15px 15px;
+
+        .imagen{
+            height: 187px !important;
+        }
+
+        .info{
+            padding:20px;
+            height: 235px;
+            .fecha{
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: right;
+                color: #333333;
+            }
+            .datos{
+                .titulo{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #01589B;
+                }
+                .descripcion{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #333333;
+                    max-height: 126px;
+                    overflow: hidden;
+                }     
+                
+            }
+            
+        }
+        .boton{
+            padding-right:20px;
+            background: none;
+            border: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            color: #2D9CDB;
+            outline: none;
+            height: 100%;
+        }
+    }        
+}
+
+.bgblanco{
+    background: #FFF;
+}
+
+.block-with-text {
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  .block-with-text:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .block-with-text:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+  }           

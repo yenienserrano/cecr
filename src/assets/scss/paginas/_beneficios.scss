@@ -1,0 +1,251 @@
+.bgBeneficios{
+    background-image: url("./assets/img/bg/bg_links.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    .titulo{
+        padding-top: 64px;
+        margin: 0 auto;
+        width: 75%;
+        
+        .tituloPagina{
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 46px;
+            line-height: 55px;
+            color: #01589B;
+        }
+    }
+    .contenedor{
+        margin: 0 auto;
+        width: 85%;        
+        margin-bottom: 124px;
+        margin-top: 50px;
+        border-radius: 8px;
+        
+
+        .cartaBeneficios{
+            background: #FFFFFF;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 430px;
+            min-height: 500px;
+            
+            .sociosbg{
+                background-image: url("./assets/img/img/Beneficios/sede.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                background-position: -4px;
+            }
+
+            .salonbg{
+                background-image: url("./assets/img/img/Beneficios/salones.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                background-position: -3px;
+            }
+
+            .campingbg{
+                background-image: url("./assets/img/img/Beneficios/camping.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .osecacbg{
+                background-image: url("./assets/img/img/Beneficios/atencion_especial.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .pasobg{
+                background-image: url("./assets/img/img/Beneficios/alojamientos.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .casamientobg{
+                background-image: url("./assets/img/img/Beneficios/casamiento.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .recienbg{
+                background-image: url("./assets/img/img/Beneficios/RNAciedo.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .bolsobg{
+                background-image: url("./assets/img/img/Beneficios/mercaderia.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .hijosbg{
+                background-image: url("./assets/img/img/Beneficios/hijos.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .farmaciabg{
+                background-image: url("./assets/img/img/Beneficios/farmacia.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .opticabg{
+                background-image: url("./assets/img/img/Beneficios/optica.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .sepeliobg{
+                background-image: url("./assets/img/img/Beneficios/sepelio.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            .head{
+                height: 146px;
+                
+    
+                .contenedorTitulo{
+                    margin-top: 19px;                
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    height: 36px;
+                    background: #2D9CDB;
+                    padding: 5px 32px 5px 17px;
+    
+                    .tituloCard{                    
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                    }
+                }            
+            }
+            .parrafosBeneficios{
+                border-top: 10px solid #F2994A;
+                padding: 28px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 21px;
+                color: #01589B;
+            }
+        }
+    }    
+}
+
+@media (max-width:767px){
+    .bgBeneficios{
+        background-image: none;
+        background: #FFFFFF;
+        .titulo{      
+            padding-top: 32px;
+            padding-bottom: 20px;
+            width: 90%;    
+            .tituloPagina{                
+                font-size: 24px;
+                line-height: 28px;                
+            }
+        }
+        .contenedor{
+            padding: 0 10px 0 10px;
+            width: 100%;
+            margin-bottom: 51px;
+            margin-top: 10px;
+
+            
+            .cartaBeneficios{
+                
+                .sociosbg{
+                    background-image: url("./assets/img/movil/beneficios/sede.png");                                    
+                }
+    
+                .salonbg{
+                    background-image: url("./assets/img/movil/beneficios/salones.png");                   
+                }
+    
+                .campingbg{
+                    background-image: url("./assets/img/movil/beneficios/camping.png");
+                }
+    
+                .osecacbg{
+                    background-image: url("./assets/img/movil/beneficios/atención_especial.png");
+                }
+    
+                .pasobg{
+                    background-image: url("./assets/img/movil/beneficios/alojamientos.png");
+                }
+    
+                .casamientobg{
+                    background-image: url("./assets/img/movil/beneficios/casamiento.png");
+                }
+    
+                .recienbg{
+                    background-image: url("./assets/img/movil/beneficios/RNAciedo.png");
+                }
+    
+                .bolsobg{
+                    background-image: url("./assets/img/movil/beneficios/mercaderia.png");
+                }
+    
+                .hijosbg{
+                    background-image: url("./assets/img/movil/beneficios/hijos.png");
+                }
+    
+                .farmaciabg{
+                    background-image: url("./assets/img/movil/beneficios/farmacia.png");
+                }
+    
+                .opticabg{
+                    background-image: url("./assets/img/movil/beneficios/optica.png");
+                }
+    
+                .sepeliobg{
+                    background-image: url("./assets/img/movil/beneficios/sepelio.png");
+                }
+            }
+        }
+    }   
+}

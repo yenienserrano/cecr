@@ -1,0 +1,83 @@
+<div class="bordetop"></div>
+
+<!-- DATOS DE NOTICIA -->
+
+<div class="d-flex justify-content-center bgNoticia">
+    <div class="bgNoticia mr-5">
+        <div class="todoNoticias">    
+            <div class="seleccionNoticias d-flex w-100 mb-3">
+                <div class="d-flex justify-content-start w-100">
+                    <button class="boton pl-3" (click)="anterior()"><img src="../../../assets/img/svg/back.svg" alt=""> Anterior</button>
+                </div>    
+                <div class="d-flex justify-content-end w-100">
+                    <button class="boton pr-3">Siguiente <img src="../../../assets/img/svg/next_not.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="noticiaTotal">
+                <div class="info">
+                    <div class="fecha py-4 d-none d-md-block"> FECHA DE NOTICIA </div>
+                    <h3 class="titulo pb-4 mb-0 mb-md-4"> TITULO DE LA NOTICIA </h3>
+
+                </div>
+                <div class="mb-3">
+                    <div class="fecha ml-3 pb-4 d-block d-md-none"> FECHA DE NOTICIA </div>
+
+                    <img class="imagen cover" src=" IMAGEN DE LA NOTICIA " alt="">
+                </div>
+                <div class="info">                    
+                    <p class="descripcion mb-5 mt-1 mt-md-5">
+                        DESCRIPCION DE LA NOTICIA
+                    </p>
+                </div>    
+            </div>
+            <div class="volver mt-3 ml-3 ml-md-0">
+                <button class="botonvolver" [routerLink]="['/noticias']">Ver todas las Noticias</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-none d-md-block mr-5 ml-5 mt-5 pt-5 w-25">
+        <div class="w-50 ml-5 mt-5 pt-5 mr-5">
+            <div class="beneficios mb-5 mt-1">
+                <img src="../../../assets/img/svg/socios.svg" alt="Socio">
+                <a [routerLink]="['/beneficios-de-socio']">
+                    <h3 class="titulo mt-4 mb-3">Beneficios Socios</h3>
+                </a>
+                <p class="parrafoCartas">Contamos con una gran variedad de beneficios para vos y todo tu grupo familiar.</p>
+            </div>
+            <div>
+                <img data-toggle="modal" data-target="#calendarioDeMerdaderia" src="../../../assets/img/img/banner_mercaderia.png" alt="">
+            </div>
+            <div class="beneficios my-5">
+                <img src="../../../assets/img/svg/Autogestion.svg" alt="Socio">
+                <a target="_blank" href="https://www.aycom.com.ar/autogestion/?aycom=150">
+                    <h3 class="titulo mt-4 mb-3">Autogesti&oacute;n</h3>
+                </a>
+                <p class="parrafoCartas">Servicio de Autogesti&oacute;n para empresas y Gestores</p>
+            </div>
+            <div>
+                <img src="../../../assets/img/img/banner_farmacia.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="calendarioDeMerdaderia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Calendario de Mercadería</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="w-100" src="../../../assets/img/img/mercado.jpeg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
