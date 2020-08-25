@@ -15,7 +15,8 @@ import { BeneficiosComponent } from './components/beneficios/beneficios.componen
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { NoticiaComponent } from './components/noticia/noticia.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { MailService } from './service/mail.service'
+import { SendEmailService } from './service/mail.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -33,11 +34,12 @@ import { MailService } from './service/mail.service'
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     NoticiasService,
-    MailService
+    SendEmailService
   ],
   bootstrap: [AppComponent]
 })

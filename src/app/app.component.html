@@ -55,11 +55,11 @@
                 <div class="formulario col-lg-4 mb-lg-1 mb-0">
                     <h3 class="tituloForm">Solicitar Afiliaci&oacute;n</h3>
                     <p class="parrafoForm">Dejanos tus datos y nos comunicaremos para completar el tr&aacute;mite</p>
-                    <form #formContacto [formGroup]="FormData" method="POST" (ngSubmit)="enviarMail()">
-                        <input class="form-control mb-2" name="nombre" type="text" placeholder="Nombre y Apellido" formControlName="nombre" [(ngModel)]="contacto.nombre">
-                        <input class="form-control my-3" name="numero" type="text" placeholder="Telefono" formControlName="telefono" [(ngModel)]="contacto.numero">
-                        <input class="form-control my-3" name="mail" type="email" placeholder="Correo electr&oacute;nico" formControlName="correo" [(ngModel)]="contacto.mail">
-                        <input class="boton" type="submit" value="Enviar">
+                    <form (ngSubmit)="onSubmit(contactForm);" #contactForm="ngForm">
+                        <input class="form-control mb-2" name="name" type="text" placeholder="Nombre y Apellido" [(ngModel)]="ContactModel.nombre" required>
+                        <input class="form-control my-3" name="phone" type="text" placeholder="Telefono" [(ngModel)]="ContactModel.telefono" required>
+                        <input class="form-control my-3" name="email" type="email" placeholder="Correo electr&oacute;nico" [(ngModel)]="ContactModel.correo" required>
+                        <input class="boton" type="submit" value="Enviar" [disabled]="!contactForm.form.valid">
                     </form>
                 </div>
             </div>

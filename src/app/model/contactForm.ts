@@ -1,4 +1,4 @@
-export interface ContactModel {
+export class ContactForm {
     nombre: string;
     telefono: string;
     correo: string;
