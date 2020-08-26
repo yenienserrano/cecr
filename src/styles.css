@@ -189,7 +189,7 @@
     background-image: url("./assets/img/movil/beneficios/camping.png");
   }
   .bgBeneficios .contenedor .cartaBeneficios .osecacbg {
-    background-image: url("./assets/img/movil/beneficios/atención_especial.png");
+    background-image: url("./assets/img/movil/beneficios/atencion_especial.png");
   }
   .bgBeneficios .contenedor .cartaBeneficios .pasobg {
     background-image: url("./assets/img/movil/beneficios/alojamientos.png");
@@ -288,10 +288,10 @@
   margin-right: 0px;
 }
 
-.noticias {
+.noticiasHome {
   width: 75%;
 }
-.noticias .noticia {
+.noticiasHome .noticia {
   width: 330px;
   height: 483px;
   background: #FFFFFF;
@@ -299,14 +299,15 @@
   border-radius: 6px;
   margin: 15px 0 15px 0;
 }
-.noticias .noticia .imagen {
-  height: 187px !important;
+.noticiasHome .noticia .imagen {
+  min-height: 187px !important;
+  max-height: 187px !important;
 }
-.noticias .noticia .info {
+.noticiasHome .noticia .info {
   padding: 20px;
   height: 235px;
 }
-.noticias .noticia .info .fecha {
+.noticiasHome .noticia .info .fecha {
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
@@ -315,7 +316,7 @@
   text-align: right;
   color: #333333;
 }
-.noticias .noticia .info .datos .titulo {
+.noticiasHome .noticia .info .datos .titulo {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -323,7 +324,7 @@
   line-height: 28px;
   color: #01589B;
 }
-.noticias .noticia .info .datos .descripcion {
+.noticiasHome .noticia .info .datos .descripcion {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -332,7 +333,7 @@
   color: #333333;
   height: 84px;
 }
-.noticias .noticia .boton {
+.noticiasHome .noticia .boton {
   padding-right: 20px;
   background: none;
   border: none;
@@ -448,11 +449,11 @@
     width: 100%;
   }
 }
-.ultimasNoticias1 {
-  padding: 41px 100px 76px 0px;
-  background: #F4F3F3;
+.noticias {
+  width: 59%;
+  margin: 0 0 0 auto;
 }
-.ultimasNoticias1 .titulo {
+.noticias .titulo {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -462,7 +463,7 @@
   margin-left: 15px;
   margin-bottom: 45px;
 }
-.ultimasNoticias1 .noticia {
+.noticias .noticia {
   width: 350px;
   height: 483px;
   background: #FFFFFF;
@@ -470,14 +471,15 @@
   border-radius: 6px;
   margin: 15px 15px 15px 15px;
 }
-.ultimasNoticias1 .noticia .imagen {
-  height: 187px !important;
+.noticias .noticia .imagen {
+  min-height: 187px !important;
+  max-height: 187px !important;
 }
-.ultimasNoticias1 .noticia .info {
+.noticias .noticia .info {
   padding: 20px;
   height: 235px;
 }
-.ultimasNoticias1 .noticia .info .fecha {
+.noticias .noticia .info .fecha {
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
@@ -486,7 +488,7 @@
   text-align: right;
   color: #333333;
 }
-.ultimasNoticias1 .noticia .info .datos .titulo {
+.noticias .noticia .info .datos .titulo {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -494,7 +496,7 @@
   line-height: 28px;
   color: #01589B;
 }
-.ultimasNoticias1 .noticia .info .datos .descripcion {
+.noticias .noticia .info .datos .descripcion {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -504,7 +506,7 @@
   max-height: 126px;
   overflow: hidden;
 }
-.ultimasNoticias1 .noticia .boton {
+.noticias .noticia .boton {
   padding-right: 20px;
   background: none;
   border: none;
@@ -573,6 +575,7 @@
 .bgNoticia .todoNoticias .noticiaTotal .imagen {
   width: 100%;
   max-height: 546px;
+  min-height: 500px;
 }
 .bgNoticia .todoNoticias .noticiaTotal .info .fecha {
   font-family: Rubik;
@@ -842,12 +845,16 @@
   border: none;
 }
 
-.contactoRuta {
+.contendedorContacto {
+  width: 84%;
+  margin: 0 auto;
+}
+.contendedorContacto .contactoRuta {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 46px;
+  line-height: 55px;
   color: #01589B;
 }
 
@@ -882,6 +889,3 @@
 }
 
 /*# sourceMappingURL=styles.css.map */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

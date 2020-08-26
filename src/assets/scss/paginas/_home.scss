@@ -76,7 +76,7 @@
     }   
 }
 
-.noticias{
+.noticiasHome{
     width: 75%;
     .noticia{
         width: 330px;
@@ -87,7 +87,8 @@
         margin: 15px 0 15px 0;
 
         .imagen{
-            height: 187px !important;
+            min-height: 187px !important;
+            max-height: 187px !important;
         }
 
         .info{

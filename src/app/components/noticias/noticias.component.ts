@@ -20,7 +20,7 @@ export class NoticiasComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    /* this._noticiasService.getNoticias().subscribe(
+    this._noticiasService.getNoticias().subscribe(
       res => {
         this.noticias = res
         console.log(this.noticias)
@@ -28,7 +28,7 @@ export class NoticiasComponent implements OnInit {
           console.log(err)
         }
       }
-    ) */
+    )
   }
 
   noticiaCompleta(id){

@@ -56,10 +56,10 @@
                     <h3 class="tituloForm">Solicitar Afiliaci&oacute;n</h3>
                     <p class="parrafoForm">Dejanos tus datos y nos comunicaremos para completar el tr&aacute;mite</p>
                     <form (ngSubmit)="onSubmit(contactForm);" #contactForm="ngForm">
-                        <input class="form-control mb-2" name="name" type="text" placeholder="Nombre y Apellido" [(ngModel)]="ContactModel.nombre" required>
-                        <input class="form-control my-3" name="phone" type="text" placeholder="Telefono" [(ngModel)]="ContactModel.telefono" required>
-                        <input class="form-control my-3" name="email" type="email" placeholder="Correo electr&oacute;nico" [(ngModel)]="ContactModel.correo" required>
-                        <input class="boton" type="submit" value="Enviar" [disabled]="!contactForm.form.valid">
+                        <input matInput  class="form-control mb-2" name="name" type="text" placeholder="Nombre y Apellido" [(ngModel)]="ContactModel.nombre" required>
+                        <input matInput  class="form-control my-3" name="phone" type="text" placeholder="Telefono" [(ngModel)]="ContactModel.telefono" required>
+                        <input matInput  class="form-control my-3" name="email" type="email" placeholder="Correo electr&oacute;nico" [(ngModel)]="ContactModel.correo" required>
+                        <input matInput  class="boton" type="submit" value="Enviar" [disabled]="!contactForm.form.valid">
                     </form>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                             <p class="mail">info@cecr.com.ar</p>
                         </div>
                     </div>
-                    <a class="d-none d-lg-block" target="_blank" href="https://api.whatsapp.com/send?phone=+5493624527922">
+                    <a class="d-none d-lg-block" target="_blank" href="https://api.whatsapp.com/send?phone=+549362?????">
                         <button class="boton d-flex align-items-center justify-content-center">
                             <img class="imgWhatsapp mr-3" src="../assets/img/svg/wsp icon.svg" alt="Wh"><span class="textoBoton">Escribinos por Whatsapp</span>
                         </button>

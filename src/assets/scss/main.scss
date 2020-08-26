@@ -243,14 +243,19 @@
     }
 }
 
-.contactoRuta{
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #01589B;
+.contendedorContacto{
+    width:84%;
+    margin: 0 auto;
+    .contactoRuta{    
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 46px;
+        line-height: 55px;
+        color: #01589B;
+    }
 }
+
 
 
 @media (max-width: 767px){

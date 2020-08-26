@@ -30,6 +30,7 @@ export class AppComponent implements OnInit{
   }
   onSubmit(f: NgForm){
     this.getSentServices(this.ContactModel, f);
+    console.log(this.ContactModel)
   }
   //metodo de services
   getSentServices(body:ContactForm, f: NgForm){

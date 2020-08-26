@@ -7,26 +7,40 @@
         <div class="todoNoticias">    
             <div class="seleccionNoticias d-flex w-100 mb-3">
                 <div class="d-flex justify-content-start w-100">
-                    <button class="boton pl-3" (click)="anterior()"><img src="../../../assets/img/svg/back.svg" alt=""> Anterior</button>
+                    <button class="boton pl-3" (click)="anterior()" *ngIf="verVolver"><img class="mr-3" src="../../../assets/img/svg/back.svg"  alt=""> Anterior</button>
                 </div>    
                 <div class="d-flex justify-content-end w-100">
-                    <button class="boton pr-3">Siguiente <img src="../../../assets/img/svg/next_not.svg" alt=""></button>
+                    <button class="boton pr-3 d-flex" (click)="siguiente(noticia.id)" *ngIf="verSiguiente">Siguiente <img class="ml-3" src="../../../assets/img/svg/next_not.svg" alt=""></button>
                 </div>
             </div>
-            <div class="noticiaTotal">
+            <div class="noticiaTotal" *ngFor="let noticia of noticia">
                 <div class="info">
-                    <div class="fecha py-4 d-none d-md-block"> FECHA DE NOTICIA </div>
-                    <h3 class="titulo pb-4 mb-0 mb-md-4"> TITULO DE LA NOTICIA </h3>
+                    <div class="fecha py-4 d-none d-md-block"> {{noticia.fecha}} </div>
+                    <h3 class="titulo pb-4 mb-0 mb-md-4"> {{noticia.titulo}} </h3>
 
                 </div>
                 <div class="mb-3">
-                    <div class="fecha ml-3 pb-4 d-block d-md-none"> FECHA DE NOTICIA </div>
+                    <div class="fecha ml-3 pb-4 d-block d-md-none"> {{noticia.fecha}} </div>
 
-                    <img class="imagen cover" src=" IMAGEN DE LA NOTICIA " alt="">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner" >
+                        <div class="carousel-item " *ngFor="let img of noticia.imagen ; let index = index" [class.active]="index == 0">
+                          <img class="d-block w-100 altura" src="{{img.img}}" alt="noticia.imagen">
+                        </div>                                                                 
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                 </div>
                 <div class="info">                    
                     <p class="descripcion mb-5 mt-1 mt-md-5">
-                        DESCRIPCION DE LA NOTICIA
+                        {{noticia.texto}}
                     </p>
                 </div>    
             </div>

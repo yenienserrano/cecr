@@ -1,31 +1,32 @@
 <div class="bordetop"></div>
 
 <div class="d-flex mt-5">
-  <div class="noticias bgblanco margenes-1 pb-4 pb-lg-4">
+  <div class="noticias bgblanco pb-4 pb-lg-4">
     <h2 class="titulo tituloUltimasNoticias pl-5 pt-5 pl-lg-0 pt-lg-0 mb-lg-5">&Uacute;ltimas Noticias</h2>
-    <div class=" d-flex flex-row flex-wrap justify-content-end">
+    <div class=" d-flex flex-row flex-wrap">
       
       <!-- DATOS DE LA NOTICIA -->
 
-      <!-- <div class="noticia card mx-0 mx-lg-2">
-        <div>
-          <img class="card-img-top imagen cover" src=" IMAGEN DE LA NOTICIA " alt="">
-        </div>
-        <div class="h-100"> 
-          <div class="info">
-            <p class="fecha d-flex justify-content-end mb-3"> FECHA DE LA NOTICIA </p>
-            <div class="datos">
-              <h3 class="titulo my-4"> TITULO DE LA NOTICIA </h3>
-              <p class="descripcion my-4 block-with-text"> DESCRIPCION DE LA NOTICIA </p>
-            </div>          
+      
+          <div class="noticia card mx-0 mx-lg-2" *ngFor="let noticia of noticias">
+            <div>
+              <img class="card-img-top imagen cover" src="{{noticia.imagen.img}}" alt="{{noticia.imagen}}">
+            </div>
+            <div class="h-100"> 
+              <div class="info">
+                <p class="fecha d-flex justify-content-end mb-3"> {{noticia.fecha}} </p>
+                <div class="datos">
+                  <h3 class="titulo my-4"> {{noticia.titulo}} </h3>
+                  <p class="descripcion my-4 block-with-text"> {{noticia.texto}} </p>
+                </div>          
+              </div>
+              <div class="d-flex justify-content-end align-items-end h-25">
+                <button class="boton" [routerLink]="['/noticia/'+ noticia.id ]"><img class="mr-3" src="../../../assets/img/svg/next.svg" alt="">VER NOTICIA
+                  COMPLETA</button>
+              </div>
+            </div>
           </div>
-          <div class="d-flex justify-content-end align-items-end h-25">
-            <button class="boton" [routerLink]="['/noticia']"><img class="mr-3" src="../../../assets/img/svg/next.svg" alt="">VER NOTICIA
-              COMPLETA</button>
-          </div>
-        </div>
-      </div>  -->
-
+      
     </div>
   </div>
   <div class="d-none d-md-block">

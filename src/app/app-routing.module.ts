@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'beneficios-de-socio', component: BeneficiosComponent},
   {path: 'noticias', component: NoticiasComponent},
   {path: 'contacto', component: ContactoComponent},
-  {path: 'noticia', component: NoticiaComponent},
+  {path: 'noticia/:id', component: NoticiaComponent},
   {path: 'crudNoticias', component: CrudComponent},
   {path: 'crudNoticias/:id', component: EditarComponent},
   {path: '**', component: HomeComponent}

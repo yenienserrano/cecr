@@ -21,7 +21,7 @@
 </div>
 
 <div class="contacto d-flex justify-content-center">
-  <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493624527922">
+  <a target="_blank" href="https://api.whatsapp.com/send?phone=+549362?????">
     <button class="boton d-flex align-items-center justify-content-center my-5 my-lg-0">      
       <img class="imgWhatsapp mr-3" src="../../../assets/img/svg/wsp icon.svg" alt="Wh"><span class="textoBoton">Escribinos por
       Whatsapp</span>
@@ -62,9 +62,9 @@
           Actualizada seg&uacute;n Paritarias
         </p>
       </div>
-      <div class="beneficios col-12 col-lg-2 mb-lg-0 mb-5">
+      <div class="beneficios col-12 col-lg-2 mb-lg-0 mb-5" data-toggle="modal" data-target="#calendarioDeMerdaderia">
         <img src="../../../assets/img/svg/calendario.svg" alt="Socio">
-        <h3 class="titulo mt-4 mb-3" data-toggle="modal" data-target="#calendarioDeMerdaderia">Calendario de Mercader&iacute;a</h3>
+        <h3 class="titulo mt-4 mb-3" >Calendario de Mercader&iacute;a</h3>
         <p class="parrafoCartas">Fechas de entrega de vales para mercadería de todo el año</p>
       </div>
     </div>
@@ -73,23 +73,23 @@
 
 <!-- aca va la info de noticias -->
 
-<!-- <div class="noticias margenes-1 pb-4 pb-lg-4">
+<div class="noticiasHome margenes-1 pb-4 pb-lg-4">
   <h2 class="titulo pl-5 pt-5 pl-lg-0 pt-lg-0">&Uacute;ltimas Noticias</h2>
   <div class=" d-flex flex-row flex-wrap">
-    <div class="noticia card mx-0 mx-lg-2">
+    <div class="noticia card mx-0 mx-lg-2" *ngFor="let noticia of noticias | slice:0:4; let i=index">
       <div>
-        <img class="card-img-top imagen cover" src=" IMAGEN DE LA NOTICIA " alt="">
+        <img class="card-img-top imagen cover" src="{{noticia.imagen.img}}" alt="{{noticia.imagen}}">
       </div>
       <div class="h-100"> 
         <div class="info">
-          <p class="fecha d-flex justify-content-end mb-3"> FECHA DE LA NOTICIA </p>
+          <p class="fecha d-flex justify-content-end mb-3"> {{noticia.fecha}} </p>
           <div class="datos">
-            <h3 class="titulo my-4"> TITULO DE LA NOTICIA </h3>
-            <p class="descripcion my-4 block-with-text"> DESCRIPCION DE LA NOTICIA </p>
+            <h3 class="titulo my-4"> {{noticia.titulo}} </h3>
+            <p class="descripcion my-4 block-with-text"> {{noticia.texto}} </p>
           </div>          
         </div>
         <div class="d-flex justify-content-end align-items-end h-25">
-          <button class="boton" [routerLink]="['/noticia']"><img class="mr-3" src="../../../assets/img/svg/next.svg" alt="">VER NOTICIA
+          <button class="boton" [routerLink]="['/noticia/'+ +noticia.id ]"><img class="mr-3" src="../../../assets/img/svg/next.svg" alt="">VER NOTICIA
             COMPLETA</button>
         </div>
       </div>
@@ -99,7 +99,7 @@
   <div class="verMas d-flex justify-content-center align-items-center mb-5">
     <button class="verNov" [routerLink]="['/noticias']">M&aacute;s Novedades</button>
   </div>
-</div> -->
+</div>
 
 
 <!-- Modal -->

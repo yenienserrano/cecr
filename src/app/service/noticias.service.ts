@@ -22,19 +22,19 @@ export class NoticiasService {
   ) { }
 
   getNoticias(): Observable<Noticias>  {
-    return this._http.get(this.url + '/noticias')
+    return this._http.get("/noticia.php")
   }
 
   get4Noticias(): Observable<Noticias>  {
-    return this._http.get(this.url + '/noticias/cuatro-noticias')
+    return this._http.get("/noticia.php")
   }
 
   getUltimaNoticia(): Observable<Noticias>  {
-    return this._http.get(this.url + '/noticias/ultima-noticias')
+    return this._http.get("/noticia.php")
   }
 
   getNoticia(id: string): Observable<Noticias>  {
-    return this._http.get(this.url + '/noticias/' + id)
+    return this._http.get("/noticia.php?id="+id)
   }
 
   editarNoticia(titulo: string, descripcion: string, imagen: File, id) {    

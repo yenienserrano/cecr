@@ -14,6 +14,7 @@ import { NoticiasService } from '../../service/noticias.service'
 export class NoticiaComponent implements OnInit {
   id: any
   noticia: any
+  imagenes: any = []
   verVolver: boolean
   verSiguiente: boolean
   ultimaNoticias
@@ -30,37 +31,41 @@ export class NoticiaComponent implements OnInit {
    }
 
   ngOnInit():any {
-    /* this._noticiasService.getUltimaNoticia().subscribe(
+    
+    this._noticiasService.getUltimaNoticia().subscribe(
       res =>{
         this.ultimaNoticias = res
+        
       }
     )
     this.cargarNoticia()
+
     if(+this.id <= 1){
       this.verVolver = false          
     }else{
       this.verVolver = true
-    }     */
+    }    
   }
-
+  pruebaNoticias:any
   cargarNoticia(){
     this.id = +this._activateRouter.snapshot.paramMap.get('id')
     this._noticiasService.getNoticia(this.id).subscribe(
       res => {
-        this.noticia = res        
+        this.noticia = res 
+        this.pruebaNoticias = JSON.stringify(this.noticia)
       },
       err => console.error(err)
     )    
   }
 
   anterior(){
-    if(+this.id < 2){
+    if(+this.id <= 1){
       this.verVolver = false
     }else{
       this.verVolver = true
       this.verSiguiente = true
       this.id = this.id - 1 
-      this._router.navigate(['/noticias/' + this.id])
+      this._router.navigate(['/noticia/' + this.id])
       this._noticiasService.getNoticia(this.id).subscribe(
         res => {
           this.noticia = res
@@ -81,7 +86,7 @@ export class NoticiaComponent implements OnInit {
       this.verVolver = true
       this.verSiguiente = true
       this.id = this.id + 1 
-      this._router.navigate(['/noticias/' + this.id])
+      this._router.navigate(['/noticia/' + this.id])
       this._noticiasService.getNoticia(this.id).subscribe(
         res => {
           this.noticia = res

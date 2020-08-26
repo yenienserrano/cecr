@@ -7,17 +7,18 @@ $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
 
 
-$name= $request->name;
-$phone= $request->phone;
-$email= $request->email;
+$name= $request->nombre;
+$phone= $request->telefono;
+$email= $request->correo;
 
 
-$send_to = "yenienserrano75@gmail.com";
-$from = "yenienserrano75@gmail.com";
+$send_to = "soporte@cecr.com.ar";
+$from = "soporte@cecr.com.ar";
+
 $body='
 <html>
 <head>
-  <title>Ingrese titulo</title>
+  <title>Solicitud de contacto</title>
 </head>
 <body>
   <table cellpadding="15" cellspacing="0">
@@ -39,7 +40,7 @@ $head  = 'MIME-Version: 1.0' . "\r\n";
 $head .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $head .= 'From: ' . $from . "\r\n";
 
-if(mail($send_to,$company,$body ,$head)){
+if(mail($send_to,$company,$body ,$head,)){
     echo json_encode(true);
 }
 else{

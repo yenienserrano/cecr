@@ -1,7 +1,7 @@
-.ultimasNoticias1{
+.noticias{
+    width: 59%;
+    margin: 0 0 0 auto;
     
-    padding:41px 100px 76px 0px;
-    background: #F4F3F3;
     
 
     .titulo{
@@ -24,7 +24,8 @@
         margin: 15px 15px 15px 15px;
 
         .imagen{
-            height: 187px !important;
+            min-height: 187px !important;
+            max-height: 187px !important;
         }
 
         .info{
