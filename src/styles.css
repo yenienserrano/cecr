@@ -460,7 +460,6 @@
   font-size: 46px;
   line-height: 55px;
   color: #01589B;
-  margin-left: 15px;
   margin-bottom: 45px;
 }
 .noticias .noticia {
@@ -549,6 +548,15 @@
   background: white;
 }
 
+@media (max-width: 767px) {
+  .noticias {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .noticias .noticia {
+    width: 100%;
+  }
+}
 .tituloUltimasNoticias {
   margin-left: 20%;
 }
