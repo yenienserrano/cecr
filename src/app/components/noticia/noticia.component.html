@@ -5,12 +5,12 @@
 <div class="d-flex justify-content-center bgNoticia">
     <div class="bgNoticia mr-md-5">
         <div class="todoNoticias">    
-            <div class="seleccionNoticias d-flex w-100 mb-3">
+            <div class="seleccionNoticias d-flex w-100 mb-3" *ngFor="let ulti of ultima | slice:0:1; let i=index" >
                 <div class="d-flex justify-content-start w-100">
                     <button class="boton pl-3" (click)="anterior()" *ngIf="verVolver"><img class="mr-3" src="../../../assets/img/svg/back.svg"  alt=""> Anterior</button>
                 </div>    
-                <div class="d-flex justify-content-end w-100">
-                    <button class="boton pr-3 d-flex" (click)="siguiente(noticia.id)" *ngIf="verSiguiente">Siguiente <img class="ml-3" src="../../../assets/img/svg/next_not.svg" alt=""></button>
+                <div class="d-flex justify-content-end w-100" *ngFor="let noticia of noticia">
+                    <button class="boton pr-3 d-flex" (click)="siguiente(noticia.prox)" *ngIf="noticia.id != ulti.id">Siguiente <img class="ml-3" src="../../../assets/img/svg/next_not.svg" alt=""></button>
                 </div>
             </div>
             <div class="noticiaTotal" *ngFor="let noticia of noticia">

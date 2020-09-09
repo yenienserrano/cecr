@@ -17,7 +17,7 @@ export class NoticiaComponent implements OnInit {
   imagenes: any = []
   verVolver: boolean
   verSiguiente: boolean
-  ultimaNoticias
+  ultima: any
   idnoticia
 
 
@@ -31,14 +31,19 @@ export class NoticiaComponent implements OnInit {
    }
 
   ngOnInit():any {
-    
-    this._noticiasService.getUltimaNoticia().subscribe(
-      res =>{
-        this.ultimaNoticias = res
-        
+
+    this._noticiasService.get4Noticias().subscribe(
+      res => {
+        this.ultima = res        
+        err =>{
+          console.log(err)
+        }
       }
     )
+    console.log(this.ultima)
+    
     this.cargarNoticia()
+    
 
     if(+this.id <= 1){
       this.verVolver = false          
@@ -55,7 +60,7 @@ export class NoticiaComponent implements OnInit {
         this.pruebaNoticias = JSON.stringify(this.noticia)
       },
       err => console.error(err)
-    )    
+    )      
   }
 
   anterior(){
@@ -79,24 +84,30 @@ export class NoticiaComponent implements OnInit {
   }
 
   
-  siguiente(id){  
-    if(this.id >= id){
-      this.verSiguiente = false
-    }else{
-      this.verVolver = true
-      this.verSiguiente = true
-      this.id = this.id + 1 
-      this._router.navigate(['/noticia/' + this.id])
-      this._noticiasService.getNoticia(this.id).subscribe(
-        res => {
-          this.noticia = res
-        },
-        err => console.error(err)
-      )
-      if(this.id >= id){
+  siguiente(id){
+      if(id == ""){
         this.verSiguiente = false
+      }else{
+        this.verVolver = true
+        this.verSiguiente = true
+        this.id = this.id + 1 
+        console.log(id)
+        this._router.navigate(['/noticia/' + id])
+        this._noticiasService.getNoticia(this.id).subscribe(
+          res => {
+            this.noticia = res
+          },
+          err => console.error(err)
+        )
+        this._noticiasService.get4Noticias().subscribe(
+          res => {
+            this.ultima = res        
+            err =>{
+              console.log(err)
+            }
+          }
+        )
+        
       }
-    }
   }
-
 }

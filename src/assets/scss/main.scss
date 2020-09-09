@@ -8,6 +8,27 @@
     height: 11px;
     background: linear-gradient(180deg, #143F67 0%, rgba(15, 65, 112, 0) 100%), #2D9CDB;;
 }
+.w-20{
+    height: 15%;
+
+    .boton{
+        padding-right:20px;
+        background: none;
+        border: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #2D9CDB;
+        outline: none;
+        height: 50%;
+    }
+}
+
+.w30{
+    width: 30% !important;
+}
 
 .margen-general{
     width: 100%;
@@ -259,6 +280,10 @@
 
 
 @media (max-width: 767px){
+    .w30{
+        width: 100% !important;
+    }
+
     .fondoHeader{
         background: #F4F3F3;
         .logo{

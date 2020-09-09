@@ -21,8 +21,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this._noticiasService.get4Noticias().subscribe(
       res => {
-        this.noticias = res
-        console.log(res)
+        this.noticias = res        
         err =>{
           console.log(err)
         }

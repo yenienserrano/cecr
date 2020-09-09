@@ -37,10 +37,9 @@
 .bgBeneficios .contenedor .cartaBeneficios .sociosbg {
   background-image: url("./assets/img/img/Beneficios/sede.png");
   background-repeat: no-repeat;
-  background-size: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-position: -4px;
+  background-position: -8px 1px;
 }
 .bgBeneficios .contenedor .cartaBeneficios .salonbg {
   background-image: url("./assets/img/img/Beneficios/salones.png");
@@ -93,8 +92,7 @@
 .bgBeneficios .contenedor .cartaBeneficios .bolsobg {
   background-image: url("./assets/img/img/Beneficios/mercaderia.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -3px;
+  background-position: -2px 1px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -117,8 +115,7 @@
 .bgBeneficios .contenedor .cartaBeneficios .opticabg {
   background-image: url("./assets/img/img/Beneficios/optica.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -3px;
+  background-position: -2px 1px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -292,7 +289,7 @@
   width: 75%;
 }
 .noticiasHome .noticia {
-  width: 330px;
+  width: 23%;
   height: 483px;
   background: #FFFFFF;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
@@ -439,14 +436,14 @@
     background: #FFFFFF;
   }
 
-  .noticias {
-    width: 100%;
+  .noticiasHome {
+    width: 100% !important;
     background: #F4F3F3;
+    margin: 0 auto;
   }
-  .noticias .noticia {
-    margin-left: 3px;
-    margin-right: 3px;
-    width: 100%;
+  .noticiasHome .noticia {
+    margin: 2px auto;
+    width: 91%;
   }
 }
 .noticias {
@@ -463,7 +460,7 @@
   margin-bottom: 45px;
 }
 .noticias .noticia {
-  width: 350px;
+  width: 337px;
   height: 483px;
   background: #FFFFFF;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
@@ -638,6 +635,27 @@
 .bordetop {
   height: 11px;
   background: linear-gradient(180deg, #143F67 0%, rgba(15, 65, 112, 0) 100%), #2D9CDB;
+}
+
+.w-20 {
+  height: 15%;
+}
+.w-20 .boton {
+  padding-right: 20px;
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #2D9CDB;
+  outline: none;
+  height: 50%;
+}
+
+.w30 {
+  width: 30% !important;
 }
 
 .margen-general {
@@ -867,6 +885,10 @@
 }
 
 @media (max-width: 767px) {
+  .w30 {
+    width: 100% !important;
+  }
+
   .fondoHeader {
     background: #F4F3F3;
   }
